@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<div class="sticky-top">
+  <mat-toolbar class="toolbar">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+    <a class="nav-link" [routerLink]="['/Dashboard']">Knock Eats<span class="sr-only"></span></a>
+    <div style="position: absolute; right: 0;">
+
+      <a class="mat-button" mat-raised-button (click)="logout()" style="margin:5px;">Logout</a>
+
+    </div>
+  </mat-toolbar>
+</div>
+
+<mat-card class="carddisplay">
+  <mat-card-header class="matheaderclass"> <h1><i>Review ✰</i></h1>
+  </mat-card-header>
+  <app-star-rating (parentFunction)="parentFunction($event)"></app-star-rating>
+  
+  <mat-form-field>
+    <h2> Write your Review <textarea class="title" matInput placeholder="" name="reviewContent"
+        [(ngModel)]="review.reviewContent"></textarea></h2>
+  </mat-form-field>
+  <br>
+  <mat-card-actions>
+          <button (click)="reviews()" mat-raised-button>Add Review</button>
+  </mat-card-actions>
+</mat-card>
+  <mat-card class="carddisplay1" *ngFor="let review of reviewList | paginate:{itemsPerPage:4,currentPage:q}">
+
+    
+    <mat-card-header class="matheaderclass">
+      <mat-card-subtitle>Reviews</mat-card-subtitle>
+    </mat-card-header>
+    <div>
+    <mat-card-content class="mattitleclass"><u>Review Rating</u> : {{review.reviewRating}}</mat-card-content>
+   
+    <!-- <ul class="list-inline rating-list" *ngFor="let star of stars; let i= index" style="display: inline-block"> 
+      <li  id="{{i}}" -->
+       <!-- <a> {{countStar(review.reviewRating)}}"</a><h1>★</h1> -->
+      <!-- </li>
+  </ul> -->
+
+    <mat-card-content class="mattitleclass"><u>Review Content</u> : {{review.reviewContent}}</mat-card-content>
+    <mat-card-content class="mattitleclass"><u>User email</u> : {{review.userEmail}}</mat-card-content>
+  </div>
+    
+  </mat-card>
+
+<div class="paginationdiv">
+
+  <span>
+    <pagination-controls (pageChange)="q=$event"></pagination-controls>
+  </span>
+</div>
+</html>

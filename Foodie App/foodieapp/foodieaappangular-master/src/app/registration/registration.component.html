@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<div class="sticky-top">
+  <mat-toolbar class="toolbar">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+    <a class="nav-link" [routerLink]="['']">Knock Eats<span class="sr-only"></span></a>
+    <div style="position: absolute; right: 0;">
+
+      <a class="mat-button" mat-raised-button redirect routerLink="/Login" style="margin:7px;">Login </a>
+
+    </div>
+  </mat-toolbar>
+</div>
+<mat-card class="carddisplay">
+  <mat-card-header class="matheaderclass">
+    <h1><i>Register Here!</i></h1>
+  </mat-card-header>
+
+  <form #frmregister="ngForm" (ngSubmit)="register(frmregister.value)">
+    <div class="row">
+      <label class="col-sm-12 col-form-label">Username</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="username" value="" required [(ngModel)]="username" name="username"
+          placeholder="Enter Username">
+      </div>
+    </div>
+
+    <div class="row">
+      <label class="col-sm-12 col-form-label">Phone Number</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="mobileno" value="" required ngModel name="mobileno"
+          [(ngModel)]="mobileno" placeholder="Enter your Phone Number">
+      </div>
+    </div>
+
+    <div class="row">
+      <label class="col-sm-12 col-form-label">Email</label>
+      <div class="col-sm-4">
+        <input type="email" class="form-control" id="email" value="" required ngModel name="email" [(ngModel)]="email"
+          placeholder="Enter your Email ID">
+      </div>
+    </div>
+    <div class="row">
+      <label class="col-sm-12 col-form-label">Password</label>
+      <div class="col-sm-4">
+        <input type="password" class="form-control" id="password" value="" required [(ngModel)]="password"
+          name="password" placeholder="Enter Password">
+      </div>
+    </div>
+
+    <mat-card-actions>
+      <button type="submit" mat-raised-button>Register</button>
+      <button (click)="clear()" mat-raised-button>Clear</button>
+    </mat-card-actions>
+
+  </form>
+
+</mat-card>
+
+</html>
+<router-outlet></router-outlet>

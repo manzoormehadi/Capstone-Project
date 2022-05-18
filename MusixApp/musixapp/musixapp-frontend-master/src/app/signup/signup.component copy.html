@@ -1,0 +1,50 @@
+<div align="center">
+    <form (ngSubmit)="signup(signupForm.value)" #signupForm="ngForm" method="post">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>username</mat-label>
+          <input matInput name="username"  [formControl]="usernameFormControl" ngModel>
+          <mat-error *ngIf ="usernameFormControl.hasError('required')">Username is required</mat-error>
+        </mat-form-field>
+      <br>
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>password</mat-label>
+          <input matInput name="password"  [formControl]="passwordFormControl" ngModel>
+          <mat-error *ngIf ="passwordFormControl.hasError('required')">Password is required</mat-error>
+        </mat-form-field>
+      
+       <br>
+
+       <br>
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Email</mat-label>
+          <input matInput name="email" [formControl]="emailFormControl" ngModel>
+          <mat-error *ngIf ="emailFormControl.hasError('required')">Email is required</mat-error>
+          <mat-error *ngIf ="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter valid email address</mat-error>
+        </mat-form-field>
+      
+       <br>
+
+       <br>
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Mobile Number</mat-label>
+          <input matInput name="mobileno"  [formControl]="mobilenoFormControl" ngModel>
+          <mat-error *ngIf ="mobilenoFormControl.hasError('required')">Mobileno: is required</mat-error>
+        </mat-form-field>
+      
+       <br>
+
+       <button mat-raised-button color="primary" type="button" (click)="routetologin()" class="button">Login Page </button>
+
+        
+       <button mat-raised-button color="primary" class="button" type="submit" value="signup"> Signup</button>
+        
+
+
+      </form>
+
+      
+    </div>
+    
+    
+    <router-outlet></router-outlet>

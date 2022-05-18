@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<div class="sticky-top">
+  <mat-toolbar class="toolbar">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+    <a class="nav-link" [routerLink]="['/Dashboard']">Knock Eats<span class="sr-only"></span></a>
+    <div style="position: absolute; right: 0;">
+
+      <a class="mat-button" mat-raised-button (click)="logout()" style="margin:7px;">Logout</a>
+
+    </div>
+  </mat-toolbar>
+</div>
+
+<mat-card class="carddisplay" style="color: rgb(61, 28, 28);">
+  <mat-card-header class="matheaderclass">
+    <h1><i>Your Favourites</i> ❤</h1>
+  </mat-card-header>
+  <mat-card class="favcarddisplay" *ngFor="let favourites of favList">
+    <mat-card-content class="mattitleclass"><u>Restaurant Id</u> : {{favourites.restaurantId}}</mat-card-content>
+    <mat-card-content class="mattitleclass"><u>Restaurant Name</u> : {{favourites.restaurantName}}</mat-card-content>
+    <mat-card-content class="mattitleclass"><u>User</u> : {{favourites.loggedInUser}}</mat-card-content>
+    <button style="float: right; background-color:black;color:white;" mat-raised-button
+      (click)="deleteFavourites(favourites)">Remove</button>
+  </mat-card>
+</mat-card>
+
+</html>

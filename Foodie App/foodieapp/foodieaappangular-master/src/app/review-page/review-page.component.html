@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<div class="sticky-top">
+    <mat-toolbar class="toolbar">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+        <a class="nav-link" [routerLink]="['']">Knock Eats<span class="sr-only"></span></a>
+        <!-- <div style="position: absolute; right: 0;">
+            <a class="mat-button" mat-raised-button (click)="logout()" style="margin:5px;">Logout</a>
+        </div> -->
+    </mat-toolbar>
+</div>
+
+<div></div>
+<mat-card class="carddisplay1" *ngFor="let review of reviewList | paginate:{itemsPerPage:4,currentPage:q}">
+    <mat-card-header class="matheaderclass">
+        <mat-card-subtitle>Reviews</mat-card-subtitle>
+    </mat-card-header>
+    <div>
+        <mat-card-content class="mattitleclass"><u>Review Rating</u> : {{review.reviewRating}}</mat-card-content>
+        <mat-card-content class="mattitleclass"><u>Review Content</u> : {{review.reviewContent}}</mat-card-content>
+        <mat-card-content class="mattitleclass"><u>User email</u> : {{review.userEmail}}</mat-card-content>
+    </div>
+</mat-card>
+<div class="paginationdiv">
+    <span>
+        <pagination-controls (pageChange)="q=$event"></pagination-controls>
+    </span>
+</div>
+
+</html>

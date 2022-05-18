@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<div class="sticky-top">
+  <mat-toolbar class="toolbar">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+    <a class="nav-link" [routerLink]="['']">Knock Eats<span class="sr-only"></span></a>
+    <div style="position: absolute; right: 0;">
+
+      <a class="mat-button" mat-raised-button routerLink="/Registration" style="margin:7px;">Register</a>
+
+    </div>
+  </mat-toolbar>
+</div>
+<mat-card class="carddisplay">
+  <mat-card-header class="matheaderclass">
+    <h1><i>User Login</i></h1>
+  </mat-card-header>
+
+  <form #loginform="ngForm" (ngSubmit)="loginUser(loginform.value)">
+    <div class="row mb-4">
+      <label for="inputEmail3" class="col-sm-12 col-form-label">Username</label>
+      <div class="col-sm-4">
+        <input type="username" class="form-control" id="username" name="username" [(ngModel)]="username">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputPassword3" class="col-sm-12 col-form-label">Password</label>
+      <div class="col-sm-4">
+        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password">
+      </div>
+
+    </div>
+
+    <mat-card-actions>
+      <button type="submit" mat-raised-button>Sign in</button>
+    </mat-card-actions>
+  </form>
+
+</mat-card>
+<router-outlet></router-outlet>

@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    color:darkslategray;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }

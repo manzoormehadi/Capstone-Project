@@ -1,0 +1,41 @@
+
+<div align="center" class="bg-img">
+  <h2>Register Here</h2>
+  <form (ngSubmit)="signup(signupForm.value)" #signupForm="ngForm" method="post">
+      <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input matInput name="username" id="mx-username" ngModel>
+      </mat-form-field>
+    <br>
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput name="password" id="mx-password" ngModel>
+      </mat-form-field>
+    
+     <br>
+     <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput name="email" id="msx-email" ngModel>
+    </mat-form-field>
+  <br>
+    <mat-form-field appearance="fill">
+      <mat-label>Mobile</mat-label>
+      <input matInput name="mobile" id="msx-mobile" ngModel>
+    </mat-form-field>
+  
+   <br>
+
+     <button mat-raised-button  type="button" (click)="routetologin()" class="button">Login</button>
+
+      
+     <button mat-raised-button class="button" id="sign-up" type="submit">Sign Up</button>
+      
+
+
+    </form>
+
+    
+  </div>
+  
+  
+  <router-outlet></router-outlet>

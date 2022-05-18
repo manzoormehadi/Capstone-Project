@@ -1,0 +1,23 @@
+.mat-card-content
+{
+    border-radius: 15px;
+    opacity: 1;
+     width: 300px; 
+    height:500px;
+     margin: 30px; 
+
+}
+.docs-footer{
+  position: relative;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.footerheadclass{
+display: flex;
+flex-direction: row;
+flex-shrink: 0; 
+}
+ 

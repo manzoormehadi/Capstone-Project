@@ -1,0 +1,26 @@
+<div align="center" class="bg-img">
+
+  <form (ngSubmit)="login(loginForm.value)" #loginForm="ngForm" method="post">
+    <h2>Login Here</h2>
+      <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>UserName</mat-label>
+        <input matInput name="username"  id="msx-username" ngModel>
+      </mat-form-field>
+    <br>
+      <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput name="password" id="msx-password" ngModel>
+      </mat-form-field>
+    
+     <br>
+      <button mat-raised-button  class="button" type="submit">Login</button>
+      
+      <button mat-raised-button  class="button" type="button" (click)="routetosignup()">Sign Up</button>
+  
+    </form>
+  
+  </div>
+  
+  
+  <router-outlet></router-outlet>
+  

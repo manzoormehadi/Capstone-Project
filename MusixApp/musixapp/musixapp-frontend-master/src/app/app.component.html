@@ -1,0 +1,10 @@
+<mat-toolbar class="navbar">
+  <div>My Musix App</div>
+  <div >
+      <span><a *ngIf=(!isloggedin) id="dashboard" (click)="dashboard()" routerLinkActive="active"> Dashboard</a></span>
+      <span><a *ngIf=(!isloggedin) id="recommend" (click)="recommend()" routerLinkActive="active"> Recommend</a></span>
+      <span><a *ngIf=(!isloggedin) id="favorites" (click)="favorites()" routerLinkActive="active"> Favorites </a> </span>
+      <span><a *ngIf=(!isloggedin) id="logout" (click)="logout()" routerLinkActive="active"> Logout </a> </span>
+  </div>
+  </mat-toolbar>
+  <router-outlet></router-outlet>

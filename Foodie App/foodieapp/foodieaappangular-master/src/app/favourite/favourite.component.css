@@ -1,0 +1,43 @@
+.mat-grid-tile {
+    background: rgba(255,255,255,255);
+    border: 2px solid #000
+}
+.my-grid-tile {
+    padding-top: 24px !important;
+    margin-left: 10px;
+}
+
+.carddisplay {
+    margin: 4px 0; 
+    box-sizing: border-box;
+    position: relative;
+    background-size: cover;
+    background-position: center top 26%;
+    min-height: 560px;
+    background-image: url("https://images.pexels.com/photos/867464/pexels-photo-867464.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+}
+.favcarddisplay
+ {
+  border-radius: 15px;
+  opacity: 1;
+  width: 300px;
+  height:240px;
+  margin: 30px; 
+  background: linear-gradient(to bottom,black 5%, white 120%);
+  background-image: url("https://images.pexels.com/photos/326333/pexels-photo-326333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+}
+
+.matheaderclass
+{
+    align-self: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3px;
+    font-weight: 200;
+    height: 150px;
+}
+.matcontentclass
+{
+  align-self: inherit;
+  
+}

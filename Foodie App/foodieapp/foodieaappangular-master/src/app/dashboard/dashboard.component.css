@@ -1,0 +1,48 @@
+.clsmatch {
+    background-image: url("https://images.pexels.com/photos/2530326/pexels-photo-2530326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center ;
+    image-rendering: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    place-items: center stretch;
+    
+  }
+  .topcard {
+    background-image: url("https://images.pexels.com/photos/2530326/pexels-photo-2530326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+
+  .mw-100 {
+    height:500px;
+    align-self: auto;
+  }
+ 
+  .carddisplay {
+    border-radius: 15px;
+    opacity: 1;
+    width: 320px;
+    height:500px;
+    margin: 30px; 
+    background: linear-gradient(to bottom,black 5%, white 120%);
+}
+
+.matheaderclass {
+  align-self: auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3px;
+  font-weight: 200;
+  height: 150px;
+}
+.matcontentclass
+{
+  align-self: inherit;
+}
+.imageclass
+{
+  border-radius: 15px;
+  align-items: center;
+  height: 260px;
+  width:320px;
+}
+

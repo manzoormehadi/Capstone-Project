@@ -1,0 +1,46 @@
+
+button {
+    color: darkgreen;
+    margin-right:16px;
+}
+
+h2{
+  color: darkgreen;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("src\assets\images\pexels-photo-1103970.jpeg");
+  
+    /* Control the height of the image */
+    min-height: 750px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  ::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color:darkgreen !important;
+   }
+  
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color:darkgreen !important;
+  } 
+  
+  ::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color:darkgreen !important;
+  }
+
+  ::ng-deep.mat-form-field-label{
+    
+          color:darkgreen;
+       }
+ 
+
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-22T21:17:33 IST" name="Default suite" finished-at="2021-01-22T21:17:38 IST" duration-ms="5205">
+    <groups>
+    </groups>
+    <test started-at="2021-01-22T21:17:33 IST" name="Default test" finished-at="2021-01-22T21:17:38 IST" duration-ms="5205">
+      <class name="com.stackroute.restassured.FavouriteTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.stackroute.restassured.FavouriteTest@776b83cc]" started-at="2021-01-22T21:17:33 IST" name="setUp" finished-at="2021-01-22T21:17:34 IST" duration-ms="1262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="saveFavSuccess()[pri:1, instance:com.stackroute.restassured.FavouriteTest@776b83cc]" started-at="2021-01-22T21:17:34 IST" name="saveFavSuccess" finished-at="2021-01-22T21:17:37 IST" duration-ms="3291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveFavSuccess -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.stackroute.restassured.FavouriteTest@776b83cc]" started-at="2021-01-22T21:17:37 IST" name="setUp" finished-at="2021-01-22T21:17:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="saveFavFailure()[pri:2, instance:com.stackroute.restassured.FavouriteTest@776b83cc]" started-at="2021-01-22T21:17:37 IST" name="saveFavFailure" finished-at="2021-01-22T21:17:37 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveFavFailure -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.stackroute.restassured.FavouriteTest@776b83cc]" started-at="2021-01-22T21:17:37 IST" name="setUp" finished-at="2021-01-22T21:17:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getFavSuccess()[pri:3, instance:com.stackroute.restassured.FavouriteTest@776b83cc]" started-at="2021-01-22T21:17:37 IST" name="getFavSuccess" finished-at="2021-01-22T21:17:37 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFavSuccess -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.stackroute.restassured.FavouriteTest@776b83cc]" started-at="2021-01-22T21:17:37 IST" name="setUp" finished-at="2021-01-22T21:17:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteFavSuccess()[pri:4, instance:com.stackroute.restassured.FavouriteTest@776b83cc]" started-at="2021-01-22T21:17:37 IST" name="deleteFavSuccess" finished-at="2021-01-22T21:17:38 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteFavSuccess -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.stackroute.restassured.FavouriteTest@776b83cc]" started-at="2021-01-22T21:17:38 IST" name="setUp" finished-at="2021-01-22T21:17:38 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteFavFailure()[pri:5, instance:com.stackroute.restassured.FavouriteTest@776b83cc]" started-at="2021-01-22T21:17:38 IST" name="deleteFavFailure" finished-at="2021-01-22T21:17:38 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteFavFailure -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.stackroute.restassured.FavouriteTest@776b83cc]" started-at="2021-01-22T21:17:38 IST" name="setUp" finished-at="2021-01-22T21:17:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getFavFailure()[pri:6, instance:com.stackroute.restassured.FavouriteTest@776b83cc]" started-at="2021-01-22T21:17:38 IST" name="getFavFailure" finished-at="2021-01-22T21:17:38 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFavFailure -->
+      </class> <!-- com.stackroute.restassured.FavouriteTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

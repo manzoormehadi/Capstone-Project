@@ -1,0 +1,29 @@
+.container{
+    margin-top: 2cm;
+    margin-left:1cm;
+    color:azure;
+}
+
+.registerContainer{ 
+    margin-top: 2cm;
+    margin-left:2cm;
+}
+
+.registerContainer button{
+    margin-top:1cm;
+    background-color:#FF8C00;
+}
+
+form{
+    margin-top: 2cm;
+    margin-left:2cm;
+}
+.carddisplay{
+    margin: 4px 0; 
+    box-sizing: border-box;
+    position: relative;
+    background-size: cover;
+    background-position: center top 26%;
+    min-height: 560px;
+    background-image: url("https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+}
